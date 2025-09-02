@@ -14,6 +14,7 @@
 
 ## Algorithm 
 ใช้ *SIFT + FLANN* เป็นหลักซึ่งแค่นี้ก็เพียงพอต่อการทำ Image Search แล้ว <br>
+
 *SIFT (Scale-Invariant Feature Transform)* เป็น **feature extraction algorithm** ใช้สำหรับหา **keypoints** (จุดสำคัญในภาพ เช่น มุม, จุดเด่น) และสร้าง **descriptor** เพื่อบรรยายลักษณะเฉพาะของจุดนั้น ๆ <br>
 
 *FLANN (Fast Library for Approximate Nearest Neighbors)*  เป็น **library** ที่ช่วยค้นหา "neighbors" (ใกล้ที่สุด) ในชุดข้อมูลที่มีมิติสูงได้ (high-dimensional data) <br> <br>
