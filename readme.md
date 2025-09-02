@@ -56,13 +56,26 @@ dataset/
 
 หลักๆจะใช้ data จริงๆที่ไม่ได้ปรับสีหรืออะไรเลย แต่จะเป็นการลดความละเอียดของภาพ เพื่อประหยัดเวลาและ memory แทน ซึ่งถ้าเกิดว่าคอมแรงจริงๆ สามารถทำให้ภาพชัดตามความเหมาะสมได้เลย
 
+![Preprocess Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/preprocess_image.png)
+
 ## Pipeline
 
-
+![Pipeline Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/pipeline_image.png)
 
 ## Sample Result
 
 ฝั่งซ้ายคือรูปจากมือถือ ฝั่งขวาคือรูปที่ match ได้ เอามาเทียบกันให้ดู <br>
+
+### True Result
+
+![Result Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/result_1.png)
+![Result Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/result_2.png)
+![Result Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/result_3.png)
+![Result Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/result_4.png)
+
+### False Result
+
+![Result Image](https://github.com/wachawich/KMUTT-Location-Prediction/blob/main/image/result_5.png)
 
 ## Conclusion
 สรุปก็คือ การทำ Location Prediction ด้วยวิธีนี้ แน่นอนว่าไม่ค่อยซับซ้อน ง่าย ใช้ CPU รันก็ได้ ใช้แค่ algorithm แบบไม่ลงลึกที่อาจารย์ต้องการ ไม่ต้องถึงขั้นเป็น Image Model แต่ก็ต้องแลกกับ การกิน memory และใช้เวลาในการ search O(n) และจำเป็นต้องใช้ Multi Core , Parallel Processing ถึงจะได้ประสิทธิภาพที่สุด แต่ฮาร์ดแวร์ก็จะทำงานหนักไปด้วย
